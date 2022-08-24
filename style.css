@@ -1,0 +1,606 @@
+/* Global declarations */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+input{
+    border: none;
+    outline: none;
+    font-family: 'Manrope', sans-serif;
+}
+  
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+}
+
+.inline{
+    display: flex;
+    align-items: center;
+}
+
+.spread{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center{
+    text-align: center;
+}
+
+.light{
+    opacity: 0.7;
+}
+
+.small{
+    font-size: 14px;
+}
+
+.colored-background{
+    background-color: #0A2640;
+    color: white;
+}
+
+/* Header */
+
+header{
+    padding: 5vh 7vw;
+}
+
+header a{
+    color: white;
+}
+
+.mob-nav-btn{
+    display: none;
+}
+
+header .heading img{
+    width: 25px;
+    margin-right: 10px;
+}
+
+header .nav a{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+header .nav .login-btn{
+    background-color: white;
+    color: black;
+    padding: 12px 50px;
+    border-radius: 32px;
+    margin-right: 0;
+}
+
+/* Home */
+
+.home{
+    background-image: url('./images/home-background.png');
+    width: 100vw;
+    min-height: 100vh;
+}
+
+/* Showcase */
+
+.showcase{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 7vw;
+    color: white;
+}
+
+.showcase h1{
+    font-size: 50px;
+}
+
+.showcase-text{
+    margin-right: 5vw;
+    width: 50%;
+}
+
+.showcase-text p{
+    margin-top: 10px;
+}
+
+.showcase-buttons{
+    margin-top: 25px;
+}
+
+.showcase-buttons button{
+    padding: 15px 40px;
+    border-radius: 32px;
+    background-color: #69E6A6;
+    color: #0A2640;
+}
+
+.showcase-buttons .explore-btn{
+    margin-left: 12px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.showcase-image img{
+    width: 100%;
+}
+
+/* Logo wall */
+
+.logo-wall{
+    margin-top: 10vh;
+}
+
+.logo-wall div{
+    color: white;
+    margin: 0 20px;
+}
+
+.logo-wall img{
+    width: 20px;
+    margin-right: 8px;
+}
+
+/* Services */
+
+.services, .connect, .testimonials, .faq, .blog{
+    padding: 10vh 10vw;
+}
+
+.services h1{
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.service-tab{
+    margin-top: 5vh;
+}
+
+.service-card{
+    width: 30%;
+    min-width: 180px;
+    margin-top: 5vh;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
+.service-card img{
+    width: 100%;
+}
+
+.service-card h3{
+    margin-top: 20px;
+}
+
+.service-card a{
+    border-bottom: 1px solid #0A2640;
+    padding-bottom: 10px;
+    width: fit-content;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.service-card a img{
+    width: 20px;
+    margin-left: 20px;
+}
+
+.connect .connect-text{
+    width: 45%;
+    margin-left: 5%;
+}
+
+.connect-img{
+    width: 45%;
+}
+
+.connect-img img{
+    width: 100%;
+}
+
+.connect-text h1{
+    font-size: 35px;
+}
+
+.connect-item{
+    margin-top: 12px;
+}
+
+.connect-item img{
+    margin-right: 12px;
+}
+
+.connect-text button{
+    margin-top: 10vh;
+    padding: 15px 50px;
+    background-color: #0A2640;
+    color: white;
+    border-radius: 32px;
+}
+
+/* connect-card-item */
+
+.connect-card-item{
+    padding: 15px;
+    margin-top: 15px;
+    box-shadow: 0 0 8px rgb(0, 0, 0, 0.1);
+}
+
+.connect-card-item img{
+    margin-right: 12px;
+}
+
+/* Testimonials */
+.testimonials .spread{
+    flex-wrap: wrap;
+}
+
+.testimonials h1{
+    font-size: 45px;
+    width: 45%;
+}
+
+.testimonials-nav-btns{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.testimonials-nav-btns .left-btn{
+    margin-right: 12px;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.testimonials-nav-btns .right-btn{
+    margin-left: 12px;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.testimonials-nav-btns .left-btn img{
+    width: 25px;
+}
+
+.testimonials-tab{
+    margin-top: 10vh;
+}
+
+.testimonial-card{
+    width: 30%;
+    background-color: white;
+    padding: 35px;
+    color: #0A2640;
+    border-radius: 8px;
+}
+
+.testimonial-card p{
+    font-size: 20px;
+}
+
+.testimonial-profile{
+    margin-top: 5vh;
+}
+
+.testimonial-profile img{
+    margin-right: 8px;
+}
+
+/* faq */
+
+.faq h1{
+    font-size: 35px;
+    width: 45%;
+}
+
+.faq .faq-img{
+    width: 100%;
+}
+
+.faq .faq-item{
+    width: 50%;
+    margin-left: 20px;
+    
+}
+
+.faq-item .spread{
+    padding: 20px 0;
+    border-bottom: 1px solid #0A264035;
+}
+
+/* blog */
+
+.blog h1{
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.blog-tab{
+    margin-top: 10vh;
+}
+
+.blog-card{
+    width: 30%;
+}
+
+.blog-card .blog-image{
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.blog-card h5{
+    margin-right: 8px;
+}
+
+.blog-card .blog-profile{
+    margin-top: 12px;
+}
+
+.blog-profile img{
+    margin-right: 12px;
+}
+
+.blog button{
+    margin: 10vh auto;
+    width: 180px;
+    color: #0A2640;
+    background-color: transparent;
+    display: block;
+    padding: 20px;
+    border: 1px solid #0A2640;
+    border-radius: 32px;
+}
+
+/* subscribe */
+
+.subscribe{
+    margin: 5vw;
+    padding: 5vh 10vw;
+    background-image: url('./images/home-background.png');
+    background-position: center;
+    color: white;
+    border-radius: 8px;
+}
+
+.subscribe h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.subscribe-inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.subscribe input{
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 32px;
+    margin-right: 20px;
+}
+
+.subscribe button{
+    padding: 20px;
+    border-radius: 32px;
+    width: 120px;
+    background-color: #69E6A6;
+    color: white;
+}
+
+/* Footer */
+
+footer{
+    margin-top: 50vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 5vw;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20vh;
+}
+
+footer .description{
+    width: 40%;
+}
+
+footer div{
+    width: 20%;
+}
+
+.footer-heading{
+    color: #000;
+}
+
+.footer-heading img{
+    width: 25px;
+    margin-right: 10px;
+}
+
+.description p{
+    max-width: 350px;
+    margin-top: 10vh;
+    font-size: 14px;
+    color: #777777;
+}
+
+footer a{
+    display: block;
+    margin: 5vh 0;
+    font-size: 14px;
+    color: #777777;
+}
+
+footer span{
+    padding: 8px 20px;
+    background-color: #69E6A6;
+    color: #0A2640;
+    font-size: 12px;
+    margin-left: 12px;
+    border-radius: 32px;
+}
+
+@media screen and (max-width: 950px) {
+    .testimonials h1{
+        font-size: 45px;
+        width: 100%;
+    }
+    .testimonials-nav-btns{
+        width: fit-content;
+        margin-left: 0;
+        margin-top: 5vh;
+    }
+    .testimonials-tab{
+        display: block;
+    }
+    .testimonial-card{
+        width: 100%;
+        margin-top: 5vh;
+    }
+    .blog-tab{
+        display: block;
+    }
+    .blog-card{
+        width: 100%;
+        margin-top: 5vh;
+    }
+    .blog-card .blog-image{
+        height: 200px;
+    }
+    .showcase{
+        display: block;
+    }
+    .showcase .showcase-text{
+        margin-right: 0;
+        width: 100%;
+    }
+    .showcase .showcase-image{
+        max-width: 400px;
+        margin-top: 10vh ;
+        display: block;
+    }
+    footer div{
+        width: 45%;
+        margin-top: 5vh;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .service-tab{
+        justify-content: center;
+    }
+    .service-card{
+        width: 45%;
+    }
+    .connect{
+        display: block;
+    }
+    .connect .connect-img, .connect .connect-text{
+        width: 100%;
+    }
+    .connect .connect-img img{
+        max-width: 300px;
+        margin: 20px auto;
+        display: block;
+    }
+    .connect-text{
+        margin-left: 0;
+    }
+    .faq-tab{
+        display: block;
+    }
+    .faq-tab h1{
+        width: 100%;
+    }
+    .faq-tab .faq-item{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 5vh;
+    }
+    .services, .connect, .testimonials, .faq, .blog{
+      
+      padding: 5vh 5vw;
+    }
+    .subscribe-inputs{
+        display: block;
+        margin-top: 10vh;
+    }
+    .subscribe-inputs button{
+        margin: 0 auto;
+        display: block;
+        margin-top: 12px;
+
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .mob-nav-btn{
+        display: block;
+        color: white;
+        font-size: 20px;
+    }
+
+    header .nav{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .service-tab{
+        display: block;
+    }
+    .service-card{
+        width: 100%;
+    }
+    .services, .connect, .testimonials, .faq, .blog{
+        padding: 3vh 3vw;
+    }
+
+    .subscribe h1, .showcase h1, .services h1, .testimonials h1, .blog h1{
+        font-size: 40px;
+    }
+    
+    footer .description{
+        width: 100%;
+    }
+    .description p{
+        max-width: 100%;
+    }
+    footer div{
+        width: 100%;
+        margin-top: 5vh;
+    }
+}
